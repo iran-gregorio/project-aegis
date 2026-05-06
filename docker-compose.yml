@@ -22,7 +22,7 @@ services:
     restart: always
 
   evolution-api:
-    image: atendai/evolution-api:latest
+    image: evoapicloud/evolution-api
     container_name: evolution_api
     environment:
       - SERVER_PORT=8080
@@ -49,11 +49,21 @@ services:
     container_name: chatbot
     environment:
       - OPENROUTER_API_KEY=${OPENROUTER_API_KEY}
+      - OPENROUTER_MODEL=${OPENROUTER_MODEL}
+      - YOUR_SITE_URL=${YOUR_SITE_URL}
+      - YOUR_SITE_NAME=${YOUR_SITE_NAME}
+      - EVOLUTION_API_URL=${EVOLUTION_API_URL}
+      - EVOLUTION_API_KEY=${EVOLUTION_API_KEY}
+      - EVOLUTION_INSTANCE_NAME=${EVOLUTION_INSTANCE_NAME}
+      - DATABASE_URL=${DATABASE_URL}
+      - ALLOWED_PHONE_NUMBER=${ALLOWED_PHONE_NUMBER}
       - PORT=3000
     ports:
       - "3000:3000"
     volumes:
       - ./src:/app/src
+    depends_on:
+      - evolution-api
     restart: always
 
 volumes:

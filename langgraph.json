@@ -1,0 +1,6 @@
+{
+  "graphs": {
+    "chatbot": "./src/graphs/intentGraph.ts:intentGraph"
+  },
+  "env": ".env"
+}

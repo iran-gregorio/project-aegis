@@ -5,3 +5,6 @@ dist/
 coverage/
 *.log
 data/
+
+# LangGraph API
+.langgraph_api
