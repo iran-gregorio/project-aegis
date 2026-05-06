@@ -1,4 +1,4 @@
-# Chatbot LangChain WhatsApp
+# Project Aegis
 
 Um chatbot inteligente projetado para analisar sentimentos e lidar com agressividade no WhatsApp. Construído com uma arquitetura moderna e orientada a grafos, ele atua analisando mensagens através de LLMs e respondendo com calma e empatia quando uma ofensa ou estresse é detectado.
 

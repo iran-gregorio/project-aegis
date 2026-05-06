@@ -1,7 +1,7 @@
 {
-  "name": "chatbot-langchain-whatsapp",
+  "name": "project-aegis",
   "version": "1.0.0",
-  "description": "",
+  "description": "WhatsApp Sentiment Analysis Bot",
   "main": "index.js",
   "scripts": {
     "start": "tsx src/index.ts",
